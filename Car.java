@@ -2,20 +2,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car {
-    List<Sensor> list=new ArrayList<Sensor>();
+    List<Panel> list=new ArrayList<Panel>();
 
-
-
-    public void addObject(Sensor s){
-
-        this.list.add(s);
-
+    public void addPanel(Panel p){
+        this.list.add(p);
     }
 
     public void StatusCheck(){
-        for (Sensor s : list )
+        System.out.println("Car has ");
+        for (Panel p : list )
         {
-            s.get();
+            p.get();
         }
     }
 }
